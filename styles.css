@@ -1,0 +1,662 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    cursor: url(archibos/CursorNeonOrange.png), auto;
+    margin: 0;
+    width: 100vw;
+    height: 2000px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: auto;
+    position: relative;
+    background: url(./archibos/ParedOscura.png);
+    background-size: cover;
+    resize: both;
+    overflow: auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+main {
+    position: relative;
+    width: 100vw;
+    height: 475vh;
+    display:flex;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    cursor: url(archibos/CursorMano.png), auto;
+}
+footer {
+    width: 95vw;
+    height: 9vh;
+    border-color: blueviolet;
+    background-color: rgba(0, 0, 0, 0.486);
+    position: fixed;
+    bottom: 1.2vh;
+    display:grid;
+    align-items: center;
+    justify-content: flex-end;
+}
+small {
+    color: aliceblue;
+}
+
+.ContainerNeon {
+    margin-top: 1vh;
+    height: 16vh;
+    width: 80vh;
+    position: absolute;
+    left: 15vw;
+    top: 0;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 5vh;
+    border: 0.5vh solid blueviolet;
+    border-color: rgb(90, 54, 248);
+    border-radius: 5vh;
+    box-shadow: inset 0 0 2vh rgb(54, 132, 248), 0 0 2vh rgb(54, 132, 248);
+}
+h1 {
+    font-family: 'Gugi', cursive;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    font-size: 6rem;
+    color: rgb(25, 185, 92);
+    border: 1px white;
+    text-shadow: 0 0 1vh rgb(25, 185, 177);
+    text-shadow: 0 0 2vh rgb(25, 185, 177);
+    text-shadow: 0 0 3vh rgb(25, 185, 177);
+    text-shadow: 0 0 7vh rgb(25, 185, 177);
+}
+p {
+    font-family: 'Amatic SC', cursive;
+    color: antiquewhite;
+    font-size: 2rem;
+}
+
+.containerRedes {
+    color: rgb(41, 230, 167);
+    border-radius: 2vh;
+    margin: 0;
+    position: absolute;
+    right: 5vh;
+    bottom: 2vh;
+    font-size: 3rem;
+    letter-spacing: 0.7vh;
+    text-shadow: 0 0 1vh rgb(44, 135, 177);
+    text-shadow: 0 0 5vh rgb(44, 135, 177);
+    text-shadow: 0 0 10vh rgb(44, 135, 177);
+    text-shadow: 0 0 20vh rgb(44, 135, 177);
+}
+#blinck1 {
+    animation: blink 2s infinite backwards;
+}
+#blinck2 {
+    animation: blink 1.5s infinite backwards;
+}
+#blinck3 {
+    animation: blink 0.8ms infinite backwards;
+}
+#blinck4 {
+    animation: blink 0.2ms infinite backwards;
+}
+
+#blinck6 {
+    animation: blink 0.1s infinite backwards;
+    margin-left: 2vh;
+
+}
+@keyframes blink {
+    to{
+        color: rgb(47, 47, 53);
+        text-shadow: none;
+    }
+}
+.botonDeNeon {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 0.8vh 1.2vh;
+    color: rgb(25, 185, 92);
+    letter-spacing: 0.8vh;
+    font-size: 1.5rem;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 1.75vh;
+    font-family: 'Amatic SC', bold;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+.botonDeNeon:hover {
+    background: rgb(90, 54, 248);
+    border-radius: 1.75vh;
+    box-shadow: 0 0 12px rgb(90, 54, 248), 0 0 20px rgb(90, 54, 248), 0 0 35px rgb(90, 54, 248);
+    transition-delay: 0.4s;
+}
+.botonDeNeon span{
+    position: absolute;
+    display: block;
+}
+#span01 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 0.8vh;
+    background: linear-gradient(90deg, transparent,rgb(25, 185, 92));
+}
+.botonDeNeon:hover #span01{
+    left: 100%;
+    transition: 0.8s;
+}
+#span03 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 0.8vh;
+    background: linear-gradient(270deg, transparent,rgb(25, 185, 92));
+}
+.botonDeNeon:hover #span03{
+    right: 100%;
+    transition: 0.8s;
+}
+.conatainerBotones {
+    position: relative;
+    width: 70vw;
+    margin-left: 0vh;
+    top: 0px;
+    padding: 5vh;
+    border: 0.5vh solid blueviolet;
+    border-color: rgb(90, 54, 248);
+    box-shadow: inset 0 0 2vh rgb(54, 132, 248), 0 0 2vh rgb(54, 132, 248);
+    border-radius: 5vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    columns: wrap;
+}
+#Flechadeneon{
+    position: fixed;
+    right: 6vh;
+    top: -3vh;
+    animation-name: colgar;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes colgar {
+    from {
+        transform: translateY(-2.5vh);
+    }
+    to {
+        transform: translateY(0vh);
+    }
+}
+.cardDatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-family: 'Kalam', cursive;
+    background: url(archibos/FondoCard02.png);
+    border-radius: 15vh;
+    width: 60vw;
+    height: 95vh;
+    color: aqua;
+    padding: 1vh;
+    border: 0.5vh solid blueviolet;
+    border-color: rgb(90, 54, 248);
+    border-radius: 5vh;
+    box-shadow: inset 0 0 2vh rgb(54, 132, 248), 0 0 2vh rgb(54, 132, 248);
+}
+dl{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+}
+.containerExperiencia {
+    position: absolute;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.6rem;
+    font-family: 'Kalam', cursive;
+    background: url(archibos/FondoCard02.png);
+    border-radius: 15vh;
+    width: 56vw;
+    height: 95vh;
+    color: aqua;
+    padding: 1vh;
+    border: 0.5vh solid blueviolet;
+    border-color: rgb(90, 54, 248);
+    border-radius: 5vh;
+    box-shadow: inset 0 0 2vh rgb(54, 132, 248), 0 0 2vh rgb(54, 132, 248);
+}
+.containerExperiencia p {
+    width: 60vh;
+    left: 50vh;
+}
+.containerExperiencia h1{
+    margin: 1vh;
+    align-items: center;
+    text-align: center;
+}
+.containerTextoGalleria {
+    width: 180vh;
+    height: 60vh;
+    left: 1vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.containerGaleriaXP {
+    position: relative;
+    left: 0vh;
+    bottom: 0vh;
+    width: 23.5%;
+    height: 150vh;
+    overflow: hidden;
+}
+.containerGaleriaXP img{
+    border: 0.5vh solid blueviolet;
+    border-color: rgb(90, 54, 248);
+    border-radius: 8vh;
+    box-shadow: inset 0 0 2vh rgb(54, 132, 248), 0 0 2vh rgb(54, 132, 248);
+}
+
+.containerGaleriaXP ul{
+    display: flex;
+    animation: cambio 5s infinite alternate linear;
+    width: 400%;
+}
+.containerGaleriaXP li{
+    width: 100%;
+    list-style: none;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+#section01 {
+    padding: 2vh;
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    display:flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-direction: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#section02 {
+    padding: 2vh;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#section03 {
+    margin-top: 10vh;
+    padding: 2vh;
+    position: relative;
+    margin-top: 0;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#section04 {
+    margin-top: 10vh;
+    padding: 2vh;
+    position: relative;
+    margin-top: 0;
+    width: 100vw;
+    height: 80vh;
+    display:flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#section05 {
+    margin-top: 10vh;
+    position: relative;
+    margin-top: 0;
+    width: 100vw;
+    height: 80vh;
+    display:flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.containerEdu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-family: 'Kalam', cursive;
+    background: url(archibos/FondoCard02.png);
+    border-radius: 15vh;
+    width: 90vh;
+    height: 70vh;
+    color: aqua;
+    padding: 1vh;
+    border: 0.5vh solid blueviolet;
+    border-color: rgb(90, 54, 248);
+    border-radius: 5vh;
+    box-shadow: inset 0 0 2vh rgb(54, 132, 248), 0 0 2vh rgb(54, 132, 248);
+}
+
+.containerSobreMi{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-family: 'Kalam', cursive;
+    background: url(archibos/FondoCard02.png);
+    border-radius: 15vh;
+    width: 90vh;
+    height: 70vh;
+    color: aqua;
+    padding: 1vh;
+    border: 0.5vh solid blueviolet;
+    border-color: rgb(90, 54, 248);
+    border-radius: 5vh;
+    box-shadow: inset 0 0 2vh rgb(54, 132, 248), 0 0 2vh rgb(54, 132, 248);
+}
+#Hide{
+    width: 30%;
+
+}
+
+/** Responcive */
+
+@media screen and (max-width:500px) {
+    *{
+        padding: 0;
+    }
+    video {
+        width: 30vw;
+        height: 5vh;
+    }
+    body {
+        width: 100vw;
+        height: 435vh;
+    }
+    main {
+        width: 100vw;
+        height: 430vh;
+    }
+    #section01{
+        width: 100vw;
+        height: 100vh;
+    } 
+    #section02{
+        width: 100vw;
+        height: 50vh;
+    } 
+    #section03{
+        width: 100vw;
+        height: 100vh;
+    } 
+    #section04{
+        width: 100vw;
+        height: 75vh;
+    } 
+    #section05{
+        width: 100vw;
+        height: 80vh;
+    }
+    #Flechadeneon{
+        display: none;
+    }
+    footer {
+        width: 450px;
+        height: 8vh;
+        border-color: blueviolet;
+        background-color: rgba(0, 0, 0, 0.486);
+        position: fixed;
+        display:grid;
+        align-items: center;
+        justify-content: end;
+    }
+    p {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .ContainerNeon{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 5px;
+        width: 298px;
+        top: 15;
+    }
+    .containerRedes{
+        display: flex;
+        flex-direction: row;
+        width: 323px;
+        font-size: 1.8rem;
+    }
+    .conatainerBotones{
+        padding: 3;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 150px;
+        height: 150px;
+    }
+    a {
+        width: 10vh;
+    }
+    .botonDeNeon{
+        width: 170px;
+        font-size: 0.8rem;
+    }
+    video {
+        width: 400px;
+        height: 400px;
+        left: 5px;
+    }
+    .cardDatos{
+        width: 370px;
+        height: 400px;
+    }
+    .containerTextoDatos h1{
+        font-size: 2.1rem;
+        width: 200px;
+    }
+    dl{
+        font-family: 'Amatic SC', cursive;
+        font-size: 1.1rem;
+    }
+    .containerExperiencia{
+        display: flex;
+        justify-content: center;
+        width: 85vw;
+        height: 600px;
+    }
+    .containerTextoGalleria{
+        width: 250px;
+        height: 300px;
+    }
+    .containerGaleriaXP{
+        display: none;
+    }
+    .containerEdu{
+        display: flex;
+        justify-content: center;
+        width: 370px;
+        height: 600px;
+    }
+    .containerSobreMi{
+        display: flex;
+        justify-content: center;
+        width: 370px;
+        height: 600px;
+    }
+}
+
+/* @media screen and (max-width:800px) {
+    *{
+        padding: 0;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    main {
+        width: 100vw;
+        height: 320vh;
+    }
+    #section01{
+        width: 100vw;
+        height: 103vh;
+    } 
+    #section02{
+        height: 420px;
+        width: 450px;
+    } 
+    #section03{
+        width: 450px;
+        height: 600px;
+    } 
+    #section04{
+        width: 450px;
+        height: 650px;
+    } 
+    #section05{
+        width: 450px;
+        height: 620px;
+    }
+    #Flechadeneon{
+        display: none;
+    }
+    footer {
+        width: 450px;
+        height: 8vh;
+        border-color: blueviolet;
+        background-color: rgba(0, 0, 0, 0.486);
+        position: fixed;
+        display:grid;
+        align-items: center;
+        justify-content: end;
+    }
+    p {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .ContainerNeon{
+        display: flex;
+        justify-content: center;
+        left: 5px;
+        width: 298px;
+    }
+    .containerRedes{
+        display: flex;
+        flex-direction: row;
+        width: 323px;
+        font-size: 1.8rem;
+    }
+    .conatainerBotones{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 150px;
+        height: 150px;
+    }
+    a {
+        width: 10vh;
+    }
+    .botonDeNeon{
+        width: 170px;
+        font-size: 0.8rem;
+    }
+    video {
+        width: 400px;
+        height: 400px;
+        left: 5px;
+    }
+    .cardDatos{
+        width: 370px;
+        height: 400px;
+    }
+    .containerTextoDatos h1{
+        font-size: 2.1rem;
+        width: 200px;
+    }
+    dl{
+        font-size: 0.75rem;
+    }
+    .containerExperiencia{
+        display: flex;
+        justify-content: center;
+        width: 370px;
+        height: 600px;
+    }
+    .containerTextoGalleria{
+        width: 250px;
+        height: 300px;
+    }
+    .containerGaleriaXP{
+        display: none;
+    }
+    .containerEdu{
+        display: flex;
+        justify-content: center;
+        width: 370px;
+        height: 600px;
+    }
+    .containerSobreMi{
+        display: flex;
+        justify-content: center;
+        width: 370px;
+        height: 600px;
+    }
+} */
