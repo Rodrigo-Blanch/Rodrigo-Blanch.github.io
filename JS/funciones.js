@@ -14,3 +14,18 @@ HideGallery.addEventListener('click', () => {
         GaleriaHide.style.display = 'none';
     }
 })
+
+/*     const funcionFlecha = document.getElementById('irYVolver');
+    funcionFlecha.addEventListener('click', () => {
+        let Flechadeneon = document.getElementById('Flechadeneon');
+    
+        let currentDisplay = Flechadeneon.style.display;
+    
+        if (currentDisplay === 'none') {
+            Flechadeneon.style.display = 'block';
+        }
+        else{
+            Flechadeneon.style.display = 'none';
+        }
+    })
+ */
