@@ -4,7 +4,7 @@ html {
 body {
     cursor: url(archibos/CursorNeonOrange.png), auto;
     margin: 0;
-    width: 100vw;
+    width: 90vw;
     height: 2000px;
     display:flex;
     flex-direction: row;
@@ -19,9 +19,13 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
 }
+header {
+    position: absolute;
+    width: 50vw;
+}
 main {
     position: relative;
-    width: 100vw;
+    width: 80vw;
     height: 475vh;
     display:flex;
     justify-content: flex-start;
@@ -187,8 +191,9 @@ p {
     columns: wrap;
 }
 #Flechadeneon{
+    display: block;
     position: fixed;
-    right: 6vh;
+    right: 0vw;
     top: -3vh;
     animation-name: colgar;
     animation-duration: 1.3s;
