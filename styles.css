@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+   
 }
 body {
     cursor: url(archibos/CursorNeonOrange.png), auto;
@@ -35,7 +36,8 @@ main {
     justify-content: center;
     align-items: center;
 }
-a {
+a { 
+    text-decoration: none;
     cursor: url(archibos/CursorMano.png), auto;
 }
 footer {
